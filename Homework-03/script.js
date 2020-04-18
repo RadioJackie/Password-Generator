@@ -12,7 +12,8 @@ function writePassword() {
 
 // Dom elements
 const passwordEl = document.getElementById('password')
-const generateEl = document.getElementById('generateBtn')
+const generateEl = document.getElementById('generate')
+const lengthEl = document.getElementById('length')
 
 const randomFunc = {
 	lower: getRandomLower,
@@ -20,6 +21,17 @@ const randomFunc = {
 	number: getRandomNumber,
 	symbol: getRandomSymbol
 }
+
+// Add event listener to generate button
+generateBtn.addEventListener("click", writePassword, {
+	const length =  +lengthEl.value;
+
+	console.log(length) 
+}
+);
+
+
+
 
 // Generator Functions
 
@@ -44,8 +56,4 @@ function getRandomSymbol() {
 	const symbols = '!@#$%^&*(){}[]=<>/,.'
 	return symbols[Math.floor(Math.random() * symbols.length)];
 }
-
-/
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
 
