@@ -8,6 +8,7 @@ function writePassword() {
 	var passwordText = document.querySelector("#password");
 
 	passwordText.value = password;
+
 }
 
 // Add event listener to generate button
@@ -40,13 +41,5 @@ generateBtn.addEventListener("click", writePassword); {
 
 		return userChoices;
 	}
+}
 
-	
-
-/*
-Psudo code
-1.)Figure out how to make the button work when I click it
-2.)Set a criteria for the creation of the password
-3.)Choose a length betweem 8 and 128 characters for your password generator
-4.)
-*/
